@@ -1,3 +1,11 @@
+// Ce programme est écrit en JavaScript
+//,en utilisant Node.js pour créer un
+// serveur HTTP et gérer les requêtes
+// GET et POST.
+
+
+
+
 // Importation des modules requis
 const http = require('http');
 const fs = require('fs');
