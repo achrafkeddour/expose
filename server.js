@@ -1,10 +1,7 @@
 // Ce programme est écrit en JavaScript
-//,en utilisant Node.js pour créer un
+// en utilisant Node.js pour créer un
 // serveur HTTP et gérer les requêtes
 // GET et POST.
-
-
-
 
 // Importation des modules requis
 const http = require('http');
@@ -57,7 +54,7 @@ function parseFormData(formData) {
 }
 
 // Port sur lequel le serveur écoutera
-const port = 3000;
-server.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}/`);
+const port = 10000; // Utilisation du port 10000
+server.listen(port, '0.0.0.0', () => { // Binding to 0.0.0.0
+  console.log(`Server running at http://0.0.0.0:${port}/`);
 });
