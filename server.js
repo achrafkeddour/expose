@@ -58,3 +58,10 @@ const port = 10000; // Utilisation du port 10000
 server.listen(port, '0.0.0.0', () => { // Binding to 0.0.0.0
   console.log(`Server running at http://0.0.0.0:${port}/`);
 });
+
+
+// Port sur lequel le serveur écoutera (localhost)
+// const port = 3000;
+// server.listen(port, () => {
+// console.log(`Server running at http://localhost:${port}/`);
+// });
