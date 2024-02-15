@@ -19,8 +19,10 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
   const formData = req.body;
   const additionalDataHTML = `
-    <p>Votre Nom de famille est : ${formData.name}</p>
+    <p>Votre Nom est : ${formData.name}</p>
+    <p>Votre Age est : ${formData.age}</p>
     <p>Votre Spécialité est : ${formData.speciality}</p>
+    <p>Votre E-mail est : ${formData.email}</p>
   `;
   const responseHTML = `
     ${formHTML.replace('</div>', `
