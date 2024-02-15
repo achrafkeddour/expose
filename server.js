@@ -1,6 +1,10 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 const port = 10000;
+
+// Parse URL-encoded bodies (as sent by HTML forms)
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve the HTML form
 app.get('/', (req, res) => {
@@ -18,6 +22,7 @@ app.post('/', (req, res) => {
   `);
 });
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}/`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server running at http://0.0.0.0:${port}/`);
 });
+
