@@ -1,0 +1,22 @@
+// Importation des modules requis
+const http = require('http');
+
+// utilise le module fs (système de fichiers)  
+const fs = require('fs'); 
+// pour lire le contenu du fichier "file.html" en utilisant l'encodage UTF-8.
+const a = fs.readFileSync('file.html', 'UTF-8');
+
+// Création du serveur HTTP
+const server = http.createServer((req, res) => {
+
+  res.write(a); // je la supprime dans l'explication
+
+  res.end('<p>bonjour du cote serveur (nodejs)! </p> ');
+//   
+});
+
+// Port sur lequel le serveur écoutera (localhost)
+server.listen(3000, () => {
+  console.log('Server running at http://localhost:3000/');
+});
+
