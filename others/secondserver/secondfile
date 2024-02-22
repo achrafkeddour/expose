@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>principe de site dynamique</title>
+</head>
+<body>
+    <div>principe de site dynamique <br><br>
+        <form method="post" > 
+            <label for="name">Écrivez un message :</label>
+            <input type="text" id="name" name="msg"  required><br><br>
+            <input type="submit"  value="envoyer" >
+        </form>
+    </div>
+</body>
+</html>
